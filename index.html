@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Directory — Best AI Tools of 2026 | Free & Paid</title>
+  <meta name="description" content="Discover the best AI tools of 2026. Browse 98+ curated AI tools for writing, coding, image generation, video, productivity and more. Free and paid options."/>
+  <meta name="keywords" content="best AI tools 2026, AI tools directory, free AI tools, ChatGPT alternatives, AI image generator, AI coding tools, AI writing tools"/>
+  <meta property="og:title" content="AI Directory — Best AI Tools of 2026"/>
+  <meta property="og:description" content="Browse 98+ curated AI tools. Find the perfect AI solution for your workflow."/>
+  <meta property="og:type" content="website"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://necklacesaura.github.io/ai-directory/"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#f8f9ff;--white:#ffffff;--primary:#7c3aed;--primary-light:#ede9fe;--text:#1a1a2e;--muted:#6b7280;--border:#e5e7eb;--card:#fff;--green:#059669;--orange:#d97706;--red:#dc2626}
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+    a{text-decoration:none;color:inherit}
+
+    /* NAV */
+    nav{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;padding:0 24px}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;height:60px;gap:32px}
+    .nav-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--text)}
+    .nav-logo-icon{width:34px;height:34px;background:var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;font-size:16px}
+    .nav-links{display:flex;gap:24px;margin-left:auto}
+    .nav-links a{font-size:14px;font-weight:500;color:var(--muted);transition:color 0.15s}
+    .nav-links a:hover,.nav-links a.active{color:var(--primary)}
+    .nav-cta{background:var(--primary);color:white;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:600;transition:opacity 0.15s}
+    .nav-cta:hover{opacity:0.85}
+
+    /* PAGES */
+    .page{display:none}
+    .page.active{display:block}
+
+    /* HERO */
+    .hero{background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 50%,#ddd6fe 100%);padding:64px 24px 56px;text-align:center}
+    .hero-badge{display:inline-flex;align-items:center;gap:6px;background:white;border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;color:var(--primary);margin-bottom:20px}
+    .hero h1{font-size:clamp(32px,5vw,54px);font-weight:800;line-height:1.15;margin-bottom:16px;color:var(--text)}
+    .hero h1 span{color:var(--primary)}
+    .hero p{font-size:17px;color:var(--muted);max-width:540px;margin:0 auto 36px;line-height:1.7}
+    .search-wrap{max-width:560px;margin:0 auto;display:flex;gap:10px;background:white;border:2px solid var(--border);border-radius:14px;padding:6px 6px 6px 18px;transition:border-color 0.2s}
+    .search-wrap:focus-within{border-color:var(--primary)}
+    .search-wrap input{flex:1;border:none;outline:none;font-size:15px;font-family:'Inter',sans-serif;color:var(--text);background:transparent}
+    .search-wrap input::placeholder{color:var(--muted)}
+    .search-wrap button{background:var(--primary);color:white;border:none;border-radius:10px;padding:10px 22px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif}
+    .popular-tags{margin-top:16px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+    .popular-tag{font-size:12px;color:var(--muted);background:white;border:1px solid var(--border);padding:4px 12px;border-radius:20px;cursor:pointer;transition:all 0.15s}
+    .popular-tag:hover{border-color:var(--primary);color:var(--primary)}
+
+    /* STATS BAR */
+    .stats-bar{background:white;border-bottom:1px solid var(--border);padding:14px 24px}
+    .stats-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;align-items:center;flex-wrap:wrap}
+    .stat-item{display:flex;align-items:center;gap:8px;font-size:13px}
+    .stat-num{font-weight:700;color:var(--primary)}
+    .stat-lbl{color:var(--muted)}
+
+    /* MAIN LAYOUT */
+    .main{max-width:1200px;margin:0 auto;padding:32px 24px 80px;display:grid;grid-template-columns:220px 1fr;gap:32px}
+    @media(max-width:768px){.main{grid-template-columns:1fr}}
+
+    /* SIDEBAR */
+    .sidebar{}
+    .sidebar-section{background:white;border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px}
+    .sidebar-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:14px}
+    .cat-item{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:8px;cursor:pointer;transition:background 0.15s;font-size:13px;font-weight:500}
+    .cat-item:hover,.cat-item.active{background:var(--primary-light);color:var(--primary)}
+    .cat-count{font-size:11px;background:var(--bg);padding:2px 7px;border-radius:10px;color:var(--muted)}
+    .cat-item.active .cat-count{background:var(--primary);color:white}
+    .price-item{display:flex;align-items:center;gap:8px;padding:7px 10px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:500}
+    .price-item input{accent-color:var(--primary)}
+
+    /* TOOLS GRID */
+    .tools-area{}
+    .tools-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px}
+    .tools-title{font-size:18px;font-weight:700}
+    .tools-meta{font-size:13px;color:var(--muted)}
+    .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+    .tool-card{background:white;border:1px solid var(--border);border-radius:14px;padding:20px;transition:all 0.15s;cursor:pointer;position:relative}
+    .tool-card:hover{border-color:var(--primary);box-shadow:0 4px 20px rgba(124,58,237,0.1);transform:translateY(-2px)}
+    .tc-top{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px}
+    .tc-icon{width:44px;height:44px;border-radius:10px;background:var(--primary-light);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+    .tc-info{flex:1;min-width:0}
+    .tc-name{font-size:15px;font-weight:700;margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .tc-cat{font-size:11px;color:var(--muted)}
+    .tc-desc{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:14px}
+    .tc-bottom{display:flex;align-items:center;justify-content:space-between}
+    .tc-price{font-size:12px;font-weight:600;padding:4px 10px;border-radius:6px}
+    .price-free{background:#d1fae5;color:#065f46}
+    .price-freemium{background:#dbeafe;color:#1e40af}
+    .price-paid{background:#fce7f3;color:#9d174d}
+    .tc-trend{font-size:11px;font-weight:600;color:var(--red);display:flex;align-items:center;gap:3px}
+    .tc-link{font-size:12px;font-weight:600;color:var(--primary);display:flex;align-items:center;gap:4px}
+    .tc-badge{position:absolute;top:14px;right:14px;font-size:10px;font-weight:700;padding:3px 7px;border-radius:6px;background:#fef3c7;color:#92400e}
+
+    /* CATEGORIES PAGE */
+    .cats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;max-width:1200px;margin:0 auto;padding:32px 24px 80px}
+    .cat-card{background:white;border:1px solid var(--border);border-radius:14px;padding:24px;text-align:center;cursor:pointer;transition:all 0.15s}
+    .cat-card:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:0 4px 20px rgba(124,58,237,0.08)}
+    .cat-card-icon{font-size:32px;margin-bottom:12px}
+    .cat-card-name{font-size:15px;font-weight:700;margin-bottom:4px}
+    .cat-card-count{font-size:12px;color:var(--muted)}
+
+    /* ABOUT PAGE */
+    .page-content{max-width:760px;margin:0 auto;padding:48px 24px 80px}
+    .page-content h1{font-size:32px;font-weight:800;margin-bottom:12px}
+    .page-content .lead{font-size:16px;color:var(--muted);line-height:1.7;margin-bottom:32px}
+    .page-content h2{font-size:20px;font-weight:700;margin:32px 0 12px;color:var(--text)}
+    .page-content p{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:16px}
+    .page-content ul{margin:0 0 16px 20px}
+    .page-content ul li{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:6px}
+    .about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}
+    @media(max-width:600px){.about-grid{grid-template-columns:1fr}}
+    .about-stat{background:var(--primary-light);border-radius:12px;padding:20px;text-align:center}
+    .about-stat-num{font-size:28px;font-weight:800;color:var(--primary)}
+    .about-stat-lbl{font-size:13px;color:var(--muted);margin-top:4px}
+
+    /* CONTACT PAGE */
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:32px}
+    @media(max-width:640px){.contact-grid{grid-template-columns:1fr}}
+    .contact-info{background:var(--primary-light);border-radius:14px;padding:28px}
+    .contact-info h3{font-size:18px;font-weight:700;margin-bottom:16px;color:var(--primary)}
+    .contact-detail{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px}
+    .contact-detail-icon{width:36px;height:36px;background:white;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+    .contact-detail-text{font-size:14px;color:var(--muted);line-height:1.6}
+    .contact-detail-text strong{color:var(--text);display:block;margin-bottom:2px}
+    .contact-form{background:white;border:1px solid var(--border);border-radius:14px;padding:28px}
+    .form-group{margin-bottom:18px}
+    .form-group label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--text)}
+    .form-group input,.form-group textarea{width:100%;border:1.5px solid var(--border);border-radius:8px;padding:10px 14px;font-size:14px;font-family:'Inter',sans-serif;color:var(--text);outline:none;transition:border-color 0.15s}
+    .form-group input:focus,.form-group textarea:focus{border-color:var(--primary)}
+    .form-group textarea{resize:vertical;min-height:110px}
+    .form-submit{background:var(--primary);color:white;border:none;border-radius:8px;padding:12px 24px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;width:100%;transition:opacity 0.15s}
+    .form-submit:hover{opacity:0.85}
+    .form-success{display:none;background:#d1fae5;border:1px solid #a7f3d0;border-radius:8px;padding:14px;text-align:center;font-size:14px;color:#065f46;margin-top:12px}
+
+    /* PRIVACY / TERMS */
+    .legal-content h1{font-size:28px;font-weight:800;margin-bottom:8px}
+    .legal-content .updated{font-size:13px;color:var(--muted);margin-bottom:32px}
+    .legal-content h2{font-size:17px;font-weight:700;margin:28px 0 10px}
+    .legal-content p{font-size:14px;color:var(--muted);line-height:1.85;margin-bottom:14px}
+    .legal-content ul{margin:0 0 14px 20px}
+    .legal-content ul li{font-size:14px;color:var(--muted);line-height:1.85;margin-bottom:5px}
+    .legal-content a{color:var(--primary)}
+
+    /* FOOTER */
+    footer{background:var(--text);color:#9ca3af;padding:48px 24px 28px}
+    .footer-inner{max-width:1200px;margin:0 auto}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+    @media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
+    .footer-brand .logo{font-size:18px;font-weight:800;color:white;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+    .footer-brand p{font-size:13px;line-height:1.7}
+    .footer-col h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:white;margin-bottom:14px}
+    .footer-col a{display:block;font-size:13px;margin-bottom:8px;transition:color 0.15s;cursor:pointer}
+    .footer-col a:hover{color:white}
+    .footer-bottom{border-top:1px solid #374151;padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    .footer-bottom p{font-size:13px}
+    .footer-disclaimer{font-size:12px;color:#6b7280;margin-top:8px}
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="showPage('home')">
+      <div class="nav-logo-icon">✦</div>
+      AI Directory
+    </div>
+    <div class="nav-links">
+      <a onclick="showPage('home')" class="active" id="nav-home">Home</a>
+      <a onclick="showPage('browse')" id="nav-browse">Browse Tools</a>
+      <a onclick="showPage('categories')" id="nav-categories">Categories</a>
+      <a onclick="showPage('about')" id="nav-about">About</a>
+      <a onclick="showPage('contact')" id="nav-contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HOME PAGE ===== -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero-badge">✦ 98+ AI tools curated for you</div>
+    <h1>Discover the Best<br/><span>AI Tools</span> of 2026</h1>
+    <p>Browse our curated directory of the most powerful AI tools. Find exactly what you need for your workflow.</p>
+    <div class="search-wrap">
+      <input type="text" id="heroSearch" placeholder="Search AI tools..." autocomplete="off" onkeydown="if(event.key==='Enter'){doSearch()}"/>
+      <button onclick="doSearch()">Search</button>
+    </div>
+    <div class="popular-tags">
+      <span style="font-size:12px;color:var(--muted)">Popular:</span>
+      <span class="popular-tag" onclick="quickSearch('ChatGPT')">ChatGPT</span>
+      <span class="popular-tag" onclick="quickSearch('Midjourney')">Midjourney</span>
+      <span class="popular-tag" onclick="quickSearch('GitHub Copilot')">GitHub Copilot</span>
+      <span class="popular-tag" onclick="quickSearch('Jasper')">Jasper</span>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item"><span class="stat-num">98</span><span class="stat-lbl">AI Tools Listed</span></div>
+      <div class="stat-item"><span class="stat-num">12</span><span class="stat-lbl">Categories</span></div>
+      <div class="stat-item"><span class="stat-num">Weekly</span><span class="stat-lbl">Updates</span></div>
+      <div class="stat-item"><span class="stat-num">Free</span><span class="stat-lbl">No Signup Required</span></div>
+    </div>
+  </div>
+
+  <!-- Trending Section -->
+  <div style="max-width:1200px;margin:0 auto;padding:32px 24px 0">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+      <h2 style="font-size:20px;font-weight:700">🔥 Trending Now</h2>
+      <span onclick="showPage('browse')" style="font-size:13px;color:var(--primary);font-weight:600;cursor:pointer">View all →</span>
+    </div>
+    <div class="tools-grid" id="trending-grid"></div>
+  </div>
+
+  <!-- Categories Preview -->
+  <div style="max-width:1200px;margin:0 auto;padding:40px 24px 0">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+      <h2 style="font-size:20px;font-weight:700">Browse by Category</h2>
+      <span onclick="showPage('categories')" style="font-size:13px;color:var(--primary);font-weight:600;cursor:pointer">All categories →</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px" id="home-cats"></div>
+  </div>
+
+  <!-- Recently Added -->
+  <div style="max-width:1200px;margin:0 auto;padding:40px 24px 80px">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+      <h2 style="font-size:20px;font-weight:700">Recently Added</h2>
+      <span onclick="showPage('browse')" style="font-size:13px;color:var(--primary);font-weight:600;cursor:pointer">Browse all →</span>
+    </div>
+    <div class="tools-grid" id="recent-grid"></div>
+  </div>
+</div>
+
+<!-- ===== BROWSE PAGE ===== -->
+<div class="page" id="page-browse">
+  <div class="main">
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-title">Categories</div>
+        <div id="sidebar-cats"></div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-title">Pricing</div>
+        <label class="price-item"><input type="checkbox" id="f-free" onchange="filterTools()"/> Free</label>
+        <label class="price-item"><input type="checkbox" id="f-freemium" onchange="filterTools()"/> Freemium</label>
+        <label class="price-item"><input type="checkbox" id="f-paid" onchange="filterTools()"/> Paid</label>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-title">Filter</div>
+        <label class="price-item"><input type="checkbox" id="f-trending" onchange="filterTools()"/> 🔥 Trending Only</label>
+        <label class="price-item"><input type="checkbox" id="f-featured" onchange="filterTools()"/> ⭐ Featured</label>
+      </div>
+    </aside>
+    <div class="tools-area">
+      <div class="tools-header">
+        <div>
+          <div class="tools-title" id="browse-title">All AI Tools</div>
+          <div class="tools-meta" id="browse-meta"></div>
+        </div>
+        <input type="text" id="browseSearch" placeholder="Search tools..." onkeyup="filterTools()" style="border:1.5px solid var(--border);border-radius:8px;padding:8px 14px;font-size:13px;outline:none;font-family:'Inter',sans-serif;width:200px"/>
+      </div>
+      <div class="tools-grid" id="browse-grid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CATEGORIES PAGE ===== -->
+<div class="page" id="page-categories">
+  <div style="max-width:1200px;margin:0 auto;padding:40px 24px 16px">
+    <h1 style="font-size:28px;font-weight:800;margin-bottom:8px">Browse by Category</h1>
+    <p style="color:var(--muted);font-size:15px">Find AI tools by what you need them for</p>
+  </div>
+  <div class="cats-grid" id="cats-page-grid"></div>
+</div>
+
+<!-- ===== ABOUT PAGE ===== -->
+<div class="page" id="page-about">
+  <div class="page-content">
+    <h1>About AI Directory</h1>
+    <p class="lead">Your curated source for discovering the best AI tools in 2026. We research, test, and organize every tool so you don't have to.</p>
+    <div class="about-grid">
+      <div class="about-stat"><div class="about-stat-num">98+</div><div class="about-stat-lbl">AI Tools Listed</div></div>
+      <div class="about-stat"><div class="about-stat-num">12</div><div class="about-stat-lbl">Categories</div></div>
+      <div class="about-stat"><div class="about-stat-num">Weekly</div><div class="about-stat-lbl">New Additions</div></div>
+    </div>
+    <h2>What We Do</h2>
+    <p>AI Directory is a free, independent resource for finding the right AI tool for any job. We curate, categorize, and review AI tools across writing, coding, image generation, video, audio, productivity, marketing, and more.</p>
+    <p>Every tool in our directory is reviewed manually. We check pricing accuracy, feature descriptions, and whether tools are actively maintained. If something changes, we update it.</p>
+    <h2>Why We Built This</h2>
+    <p>The AI landscape moves fast. New tools launch every week, pricing changes, and features evolve. Finding the right tool used to mean hours of research across Reddit threads and YouTube reviews. AI Directory cuts that down to a few clicks.</p>
+    <h2>Our Promise</h2>
+    <ul>
+      <li>No paid placements — tools are listed on merit</li>
+      <li>Accurate pricing information, updated regularly</li>
+      <li>Honest descriptions — no hype</li>
+      <li>New tools added every week</li>
+      <li>Free forever — no account required</li>
+    </ul>
+    <h2>Contact Us</h2>
+    <p>Have a tool to suggest or found an error? <span onclick="showPage('contact')" style="color:var(--primary);cursor:pointer;font-weight:600">Get in touch →</span></p>
+  </div>
+</div>
+
+<!-- ===== CONTACT PAGE ===== -->
+<div class="page" id="page-contact">
+  <div class="page-content">
+    <h1>Contact Us</h1>
+    <p class="lead">Have a question, tool suggestion, or found incorrect information? We'd love to hear from you.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📧</div>
+          <div class="contact-detail-text">
+            <strong>Email</strong>
+            <a href="mailto:Freeoffice2@gmail.com" style="color:var(--primary)">Freeoffice2@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">⏱️</div>
+          <div class="contact-detail-text">
+            <strong>Response Time</strong>
+            We aim to reply within 48 hours
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🛠️</div>
+          <div class="contact-detail-text">
+            <strong>Submit a Tool</strong>
+            Know a great AI tool we're missing? Tell us about it
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🐛</div>
+          <div class="contact-detail-text">
+            <strong>Report an Error</strong>
+            Found wrong info? We'll fix it fast
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3 style="font-size:17px;font-weight:700;margin-bottom:20px">Send a Message</h3>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="c-name" placeholder="John Smith"/>
+        </div>
+        <div class="form-group">
+          <label>Your Email</label>
+          <input type="email" id="c-email" placeholder="you@example.com"/>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" id="c-subject" placeholder="Tool suggestion, error report…"/>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="c-message" placeholder="Tell us more…"></textarea>
+        </div>
+        <button class="form-submit" onclick="submitContact()">Send Message</button>
+        <div class="form-success" id="form-success">✅ Message sent! We'll reply to your email within 48 hours.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PRIVACY PAGE ===== -->
+<div class="page" id="page-privacy">
+  <div class="page-content legal-content">
+    <h1>Privacy Policy</h1>
+    <div class="updated">Last updated: March 2026</div>
+    <p>AI Directory ("we," "us," or "our") operates the website <strong>necklacesaura.github.io/ai-directory</strong>. This page informs you of our policies regarding the collection, use, and disclosure of personal information when you use our site.</p>
+    <h2>1. Information We Collect</h2>
+    <p>We collect minimal information to improve the site experience. This may include:</p>
+    <ul>
+      <li>Information you voluntarily provide via our contact form (name, email, message)</li>
+      <li>Anonymous usage data via analytics (pages visited, time on site)</li>
+      <li>Cookies used by third-party services (Google Analytics, Google AdSense)</li>
+    </ul>
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To respond to contact form inquiries</li>
+      <li>To improve our website content and user experience</li>
+      <li>To display relevant advertisements via Google AdSense</li>
+      <li>To understand how visitors interact with our content</li>
+    </ul>
+    <h2>3. Google AdSense & Advertising</h2>
+    <p>We use Google AdSense to display advertisements. Google may use cookies to serve ads based on your prior visits to our site or other sites. You can opt out of personalised advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank">Google Ads Settings</a>.</p>
+    <p>Third-party vendors, including Google, use cookies to serve ads based on prior visits. Google's use of advertising cookies enables it and its partners to serve ads based on your visit to our site and/or other sites on the Internet.</p>
+    <h2>4. Cookies</h2>
+    <p>Our site uses cookies — small data files stored on your device. Cookies are used by Google AdSense and analytics services. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</p>
+    <h2>5. Third-Party Links</h2>
+    <p>AI Directory links to third-party websites (the AI tools we list). We are not responsible for the privacy practices of those sites. We encourage you to review their privacy policies.</p>
+    <h2>6. Data Security</h2>
+    <p>We take reasonable precautions to protect your information. However, no method of transmission over the Internet is 100% secure. Contact form submissions are sent directly to our email.</p>
+    <h2>7. Children's Privacy</h2>
+    <p>Our site is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date.</p>
+    <h2>9. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy, please contact us at: <a href="mailto:Freeoffice2@gmail.com">Freeoffice2@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ===== TERMS PAGE ===== -->
+<div class="page" id="page-terms">
+  <div class="page-content legal-content">
+    <h1>Terms of Service</h1>
+    <div class="updated">Last updated: March 2026</div>
+    <p>By accessing and using AI Directory, you agree to be bound by these Terms of Service. Please read them carefully.</p>
+    <h2>1. Use of the Site</h2>
+    <p>AI Directory provides a free directory of AI tools for informational purposes. You may use this site for personal and commercial research. You may not copy, scrape, or republish our content in bulk without permission.</p>
+    <h2>2. Accuracy of Information</h2>
+    <p>We strive to keep tool information accurate and up to date. However, pricing, features, and availability of third-party AI tools can change at any time. We are not responsible for inaccuracies in tool listings. Always verify information on the tool's official website before making purchasing decisions.</p>
+    <h2>3. Affiliate Disclosure</h2>
+    <p>AI Directory may earn a commission from affiliate links to AI tools listed on this site. This does not affect our editorial independence. Tools are listed based on quality and relevance, not affiliate relationships.</p>
+    <h2>4. Advertising</h2>
+    <p>This site displays advertisements via Google AdSense. Advertisements are clearly distinct from editorial content.</p>
+    <h2>5. Intellectual Property</h2>
+    <p>All content on this site — including tool descriptions, categorisation, and editorial copy — is the property of AI Directory unless otherwise stated. Tool names and logos belong to their respective owners.</p>
+    <h2>6. Disclaimer of Warranties</h2>
+    <p>This site is provided "as is" without warranties of any kind. We do not guarantee that the site will be error-free or available at all times.</p>
+    <h2>7. Limitation of Liability</h2>
+    <p>AI Directory shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of this site or any tool listed herein.</p>
+    <h2>8. Changes to Terms</h2>
+    <p>We reserve the right to modify these terms at any time. Continued use of the site constitutes acceptance of the updated terms.</p>
+    <h2>9. Contact</h2>
+    <p>For questions about these Terms, contact us at: <a href="mailto:Freeoffice2@gmail.com">Freeoffice2@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><span style="background:var(--primary);padding:4px 8px;border-radius:6px;font-size:14px">✦</span> AI Directory</div>
+        <p>Your curated source for discovering the best AI tools in 2026. Updated weekly with the latest and most powerful AI solutions.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a onclick="showPage('home')">Home</a>
+        <a onclick="showPage('browse')">Browse Tools</a>
+        <a onclick="showPage('categories')">Categories</a>
+        <a onclick="showPage('about')">About</a>
+        <a onclick="showPage('contact')">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Top Categories</h4>
+        <a onclick="filterByCategory('Chat')">Chat & Chatbots</a>
+        <a onclick="filterByCategory('Image Generation')">Image Generation</a>
+        <a onclick="filterByCategory('Coding')">Coding</a>
+        <a onclick="filterByCategory('Writing')">Writing</a>
+        <a onclick="filterByCategory('Video')">Video</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a onclick="showPage('privacy')">Privacy Policy</a>
+        <a onclick="showPage('terms')">Terms of Service</a>
+        <a href="mailto:Freeoffice2@gmail.com">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 AI Directory. All rights reserved.</p>
+      <p style="font-size:12px;color:#6b7280">Contact: <a href="mailto:Freeoffice2@gmail.com" style="color:#9ca3af">Freeoffice2@gmail.com</a></p>
+    </div>
+    <p class="footer-disclaimer">Disclaimer: We may earn a commission from affiliate links on this site. Tool information is provided for reference only — always verify on the tool's official website.</p>
+  </div>
+</footer>
+
+<script>
+const tools = [
+  {name:"ChatGPT",cat:"Chat",icon:"🤖",desc:"The world's most popular AI assistant for writing, coding, analysis and conversation.",price:"Freemium",trending:true,featured:true,url:"https://chat.openai.com"},
+  {name:"Claude",cat:"Chat",icon:"✦",desc:"Anthropic's AI for thoughtful conversation, long documents and complex reasoning.",price:"Freemium",trending:true,featured:true,url:"https://claude.ai"},
+  {name:"Gemini",cat:"Chat",icon:"💠",desc:"Google's AI with real-time web search and deep integration with Google Workspace.",price:"Freemium",trending:true,featured:true,url:"https://gemini.google.com"},
+  {name:"Perplexity",cat:"Chat",icon:"🔬",desc:"AI-powered search engine that provides cited, real-time answers from the web.",price:"Freemium",trending:true,featured:false,url:"https://perplexity.ai"},
+  {name:"Pi AI",cat:"Chat",icon:"🥧",desc:"A warm, personal AI companion. Completely free forever.",price:"Free",trending:false,featured:false,url:"https://pi.ai"},
+  {name:"HuggingChat",cat:"Chat",icon:"🤗",desc:"Access Llama, Mistral and other open-source models for free. No account needed.",price:"Free",trending:false,featured:false,url:"https://huggingface.co/chat"},
+  {name:"Copilot",cat:"Chat",icon:"🪟",desc:"Microsoft's AI assistant powered by GPT-4, integrated into Windows and Edge.",price:"Freemium",trending:false,featured:false,url:"https://copilot.microsoft.com"},
+  {name:"Grok",cat:"Chat",icon:"𝕏",desc:"xAI's AI assistant with access to real-time X/Twitter data.",price:"Freemium",trending:false,featured:false,url:"https://grok.x.ai"},
+  {name:"Midjourney",cat:"Image Generation",icon:"🎨",desc:"AI image generator creating stunning, artistic images from text prompts.",price:"Paid",trending:true,featured:true,url:"https://midjourney.com"},
+  {name:"DALL-E 3",cat:"Image Generation",icon:"🖼️",desc:"OpenAI's image generator with exceptional prompt accuracy.",price:"Freemium",trending:true,featured:false,url:"https://openai.com/dall-e-3"},
+  {name:"Adobe Firefly",cat:"Image Generation",icon:"🔥",desc:"Commercially safe AI image generation. All training data is fully licensed.",price:"Freemium",trending:false,featured:false,url:"https://firefly.adobe.com"},
+  {name:"Stable Diffusion",cat:"Image Generation",icon:"🌌",desc:"Free, open-source image generation you can run locally on your own computer.",price:"Free",trending:false,featured:false,url:"https://stability.ai"},
+  {name:"Leonardo AI",cat:"Image Generation",icon:"🦁",desc:"AI image generation optimised for game art, concept design and creative assets.",price:"Freemium",trending:false,featured:false,url:"https://leonardo.ai"},
+  {name:"Ideogram",cat:"Image Generation",icon:"💬",desc:"AI image generator that excels at generating text within images.",price:"Freemium",trending:true,featured:false,url:"https://ideogram.ai"},
+  {name:"Lexica",cat:"Image Generation",icon:"📚",desc:"AI image search engine and art generator with a massive community gallery.",price:"Freemium",trending:false,featured:false,url:"https://lexica.art"},
+  {name:"Luma AI",cat:"Image Generation",icon:"🎨",desc:"AI 3D capture and generation from photos and text prompts.",price:"Freemium",trending:true,featured:false,url:"https://lumalabs.ai"},
+  {name:"Bing Image Creator",cat:"Image Generation",icon:"🎯",desc:"Microsoft's free DALL-E powered image generator. Free with a Microsoft account.",price:"Free",trending:false,featured:false,url:"https://www.bing.com/images/create"},
+  {name:"Playground AI",cat:"Image Generation",icon:"🎠",desc:"Free AI image generation with multiple model options and an active community.",price:"Freemium",trending:false,featured:false,url:"https://playground.ai"},
+  {name:"GitHub Copilot",cat:"Coding",icon:"💻",desc:"AI pair programmer for inline code suggestions in VS Code and JetBrains.",price:"Paid",trending:true,featured:true,url:"https://github.com/features/copilot"},
+  {name:"Cursor",cat:"Coding",icon:"⬛",desc:"AI-first code editor built on VS Code with full codebase understanding.",price:"Freemium",trending:true,featured:true,url:"https://cursor.sh"},
+  {name:"Windsurf",cat:"Coding",icon:"🏄",desc:"Agentic AI IDE that builds entire features with minimal human input.",price:"Freemium",trending:true,featured:false,url:"https://codeium.com/windsurf"},
+  {name:"v0 by Vercel",cat:"Coding",icon:"▲",desc:"Generate production-ready React UI components from text or screenshots.",price:"Freemium",trending:false,featured:false,url:"https://v0.dev"},
+  {name:"Codeium",cat:"Coding",icon:"🟢",desc:"Free AI code completion for 70+ languages and 40+ editors. Forever free for individuals.",price:"Free",trending:false,featured:false,url:"https://codeium.com"},
+  {name:"Bolt.new",cat:"Coding",icon:"⚡",desc:"Full-stack AI development in the browser. Build and deploy complete apps instantly.",price:"Freemium",trending:true,featured:false,url:"https://bolt.new"},
+  {name:"Tabnine",cat:"Coding",icon:"📑",desc:"AI code completion that runs locally, keeping your code private.",price:"Freemium",trending:false,featured:false,url:"https://tabnine.com"},
+  {name:"Amazon Q Developer",cat:"Coding",icon:"🟡",desc:"AWS's free AI coding assistant for individual developers.",price:"Free",trending:false,featured:false,url:"https://aws.amazon.com/q/developer"},
+  {name:"Replit AI",cat:"Coding",icon:"🔄",desc:"AI-powered browser IDE for building and deploying apps collaboratively.",price:"Freemium",trending:false,featured:false,url:"https://replit.com"},
+  {name:"Jasper",cat:"Writing",icon:"✍️",desc:"Brand voice AI for marketing teams that publish high volumes of content.",price:"Paid",trending:false,featured:true,url:"https://jasper.ai"},
+  {name:"Copy.ai",cat:"Writing",icon:"📝",desc:"AI marketing copywriter for ads, emails, social posts and product descriptions.",price:"Freemium",trending:false,featured:false,url:"https://copy.ai"},
+  {name:"Writesonic",cat:"Writing",icon:"⚡",desc:"AI writing platform for SEO-optimised blog posts, ads and landing pages.",price:"Freemium",trending:false,featured:false,url:"https://writesonic.com"},
+  {name:"Grammarly",cat:"Writing",icon:"✅",desc:"AI-powered grammar, clarity and tone assistant for all your writing.",price:"Freemium",trending:false,featured:false,url:"https://grammarly.com"},
+  {name:"QuillBot",cat:"Writing",icon:"🪶",desc:"AI paraphrasing, summarising and grammar tool used by 35M+ writers.",price:"Freemium",trending:false,featured:false,url:"https://quillbot.com"},
+  {name:"Sudowrite",cat:"Writing",icon:"📖",desc:"AI writing tool specifically built for fiction and creative storytelling.",price:"Paid",trending:false,featured:false,url:"https://sudowrite.com"},
+  {name:"Notion AI",cat:"Writing",icon:"📋",desc:"AI writing and summarisation built directly inside Notion workspaces.",price:"Paid",trending:false,featured:false,url:"https://notion.so/product/ai"},
+  {name:"Wordtune",cat:"Writing",icon:"🎵",desc:"AI tool that rewrites your sentences to be clearer and more compelling.",price:"Freemium",trending:false,featured:false,url:"https://wordtune.com"},
+  {name:"Runway",cat:"Video",icon:"🎬",desc:"AI video generation and editing suite for creators and filmmakers. Gen-3 Alpha.",price:"Freemium",trending:true,featured:true,url:"https://runwayml.com"},
+  {name:"Pika",cat:"Video",icon:"🎥",desc:"Fast AI video generation for short social clips. Great for TikTok and Reels.",price:"Freemium",trending:true,featured:false,url:"https://pika.art"},
+  {name:"Sora",cat:"Video",icon:"🌊",desc:"OpenAI's text-to-video model that generates realistic, high-quality video clips.",price:"Paid",trending:true,featured:false,url:"https://openai.com/sora"},
+  {name:"Descript",cat:"Video",icon:"✂️",desc:"Edit video by editing the transcript. Auto-remove filler words and clone your voice.",price:"Freemium",trending:false,featured:false,url:"https://descript.com"},
+  {name:"Synthesia",cat:"Video",icon:"🎭",desc:"Create professional AI avatar videos in 130+ languages without a camera.",price:"Paid",trending:false,featured:false,url:"https://synthesia.io"},
+  {name:"HeyGen",cat:"Video",icon:"👤",desc:"AI video generation with realistic talking avatars for marketing and training.",price:"Freemium",trending:true,featured:false,url:"https://heygen.com"},
+  {name:"Captions",cat:"Video",icon:"🎥",desc:"AI video editing app with auto captions, effects and creator tools.",price:"Freemium",trending:true,featured:false,url:"https://captions.ai"},
+  {name:"Lumen5",cat:"Video",icon:"📹",desc:"Turn blog posts and text into engaging social media videos automatically.",price:"Freemium",trending:false,featured:false,url:"https://lumen5.com"},
+  {name:"Wondershare Filmora AI",cat:"Video",icon:"🎞️",desc:"AI-powered video editor with smart cutout, audio enhancement and effects.",price:"Paid",trending:false,featured:false,url:"https://filmora.wondershare.com"},
+  {name:"InVideo AI",cat:"Video",icon:"🎦",desc:"Create professional videos from text prompts in minutes.",price:"Freemium",trending:false,featured:false,url:"https://invideo.io"},
+  {name:"ElevenLabs",cat:"Audio",icon:"🎵",desc:"Ultra-realistic AI voice generation and cloning in 30+ languages.",price:"Freemium",trending:true,featured:true,url:"https://elevenlabs.io"},
+  {name:"Suno",cat:"Audio",icon:"🎸",desc:"Generate complete songs with vocals, lyrics and instrumentation from a text prompt.",price:"Freemium",trending:true,featured:false,url:"https://suno.ai"},
+  {name:"Udio",cat:"Audio",icon:"🎹",desc:"AI music generation creating high-quality, full songs from text descriptions.",price:"Freemium",trending:true,featured:false,url:"https://udio.com"},
+  {name:"Adobe Podcast",cat:"Audio",icon:"🎙️",desc:"Free AI voice enhancer that makes any recording sound studio-quality instantly.",price:"Free",trending:false,featured:false,url:"https://podcast.adobe.com"},
+  {name:"Murf AI",cat:"Audio",icon:"🔊",desc:"AI voiceover generator with 120+ realistic voices for videos and presentations.",price:"Freemium",trending:false,featured:false,url:"https://murf.ai"},
+  {name:"Soundraw",cat:"Audio",icon:"🎧",desc:"AI music generator for creating royalty-free tracks for any content.",price:"Paid",trending:false,featured:false,url:"https://soundraw.io"},
+  {name:"Descript Audio",cat:"Audio",icon:"🎚️",desc:"AI audio editing with automatic transcription and filler word removal.",price:"Freemium",trending:false,featured:false,url:"https://descript.com"},
+  {name:"AIVA",cat:"Audio",icon:"🎼",desc:"AI music composer for film, games and commercial projects.",price:"Freemium",trending:false,featured:false,url:"https://aiva.ai"},
+  {name:"Beatoven.ai",cat:"Audio",icon:"🥁",desc:"AI music tool that creates mood-based background music for videos and podcasts.",price:"Freemium",trending:false,featured:false,url:"https://beatoven.ai"},
+  {name:"Notion AI",cat:"Productivity",icon:"📋",desc:"AI writing and task management embedded in your Notion workspace.",price:"Paid",trending:false,featured:false,url:"https://notion.so/product/ai"},
+  {name:"Motion",cat:"Productivity",icon:"📅",desc:"AI calendar and task manager that auto-schedules your day based on priorities.",price:"Paid",trending:false,featured:false,url:"https://usemotion.com"},
+  {name:"Otter.ai",cat:"Productivity",icon:"⚡",desc:"AI meeting assistant for real-time transcription and automatic note-taking.",price:"Freemium",trending:true,featured:false,url:"https://otter.ai"},
+  {name:"Fireflies.ai",cat:"Productivity",icon:"🔥",desc:"AI meeting recorder that creates searchable transcripts and action items.",price:"Freemium",trending:false,featured:false,url:"https://fireflies.ai"},
+  {name:"Gamma",cat:"Productivity",icon:"⚡",desc:"AI presentation maker that creates stunning slides from a simple prompt.",price:"Freemium",trending:true,featured:false,url:"https://gamma.app"},
+  {name:"Zapier AI",cat:"Productivity",icon:"⚡",desc:"AI-powered workflow automation connecting 6,000+ apps with no code.",price:"Freemium",trending:false,featured:false,url:"https://zapier.com"},
+  {name:"Taskade",cat:"Productivity",icon:"✅",desc:"AI project management with automatic task generation and team collaboration.",price:"Freemium",trending:false,featured:false,url:"https://taskade.com"},
+  {name:"Reclaim.ai",cat:"Productivity",icon:"📆",desc:"AI scheduling assistant that protects time for your most important work.",price:"Freemium",trending:false,featured:false,url:"https://reclaim.ai"},
+  {name:"Mem.ai",cat:"Productivity",icon:"🧠",desc:"AI-powered notes that automatically organise and surface relevant information.",price:"Freemium",trending:false,featured:false,url:"https://mem.ai"},
+  {name:"Beehiiv AI",cat:"Productivity",icon:"🐝",desc:"AI writing tools built into the Beehiiv newsletter platform.",price:"Freemium",trending:false,featured:false,url:"https://beehiiv.com"},
+  {name:"Canva AI",cat:"Design",icon:"🎨",desc:"Magic Design, Magic Write and AI background removal inside Canva.",price:"Freemium",trending:true,featured:true,url:"https://canva.com"},
+  {name:"Adobe Firefly",cat:"Design",icon:"🔥",desc:"AI-powered creative tools inside Adobe Creative Cloud apps.",price:"Freemium",trending:false,featured:false,url:"https://firefly.adobe.com"},
+  {name:"Framer AI",cat:"Design",icon:"🖼️",desc:"Build beautiful websites with AI — describe your site and watch it appear.",price:"Freemium",trending:true,featured:false,url:"https://framer.com"},
+  {name:"Uizard",cat:"Design",icon:"📱",desc:"AI UI design tool that turns sketches and screenshots into editable designs.",price:"Freemium",trending:false,featured:false,url:"https://uizard.io"},
+  {name:"Khroma",cat:"Design",icon:"🌈",desc:"AI colour palette generator that learns your preferences.",price:"Free",trending:false,featured:false,url:"https://khroma.co"},
+  {name:"Looka",cat:"Design",icon:"✨",desc:"AI logo maker and brand identity generator for startups and small businesses.",price:"Paid",trending:false,featured:false,url:"https://looka.com"},
+  {name:"Visily",cat:"Design",icon:"🎯",desc:"AI wireframing tool that converts text or screenshots into UI prototypes.",price:"Freemium",trending:false,featured:false,url:"https://visily.ai"},
+  {name:"Autodraw",cat:"Design",icon:"✏️",desc:"Google's free AI drawing tool that recognises your sketches and suggests icons.",price:"Free",trending:false,featured:false,url:"https://autodraw.com"},
+  {name:"Namelix",cat:"Design",icon:"💡",desc:"AI business name generator with logo creation.",price:"Free",trending:false,featured:false,url:"https://namelix.com"},
+  {name:"HubSpot AI",cat:"Marketing",icon:"📣",desc:"AI-powered CRM with marketing automation, email and lead scoring.",price:"Freemium",trending:false,featured:true,url:"https://hubspot.com"},
+  {name:"Surfer SEO",cat:"Marketing",icon:"🏄",desc:"AI SEO tool for content optimisation and keyword research.",price:"Paid",trending:true,featured:false,url:"https://surferseo.com"},
+  {name:"Phrasee",cat:"Marketing",icon:"💬",desc:"AI for generating and optimising marketing language for email and ads.",price:"Paid",trending:false,featured:false,url:"https://phrasee.co"},
+  {name:"Lately AI",cat:"Marketing",icon:"📊",desc:"Analyses your best content and auto-generates new posts in the same style.",price:"Paid",trending:false,featured:false,url:"https://lately.ai"},
+  {name:"Vidiq",cat:"Marketing",icon:"▶️",desc:"AI-powered YouTube keyword research and thumbnail analysis.",price:"Freemium",trending:false,featured:false,url:"https://vidiq.com"},
+  {name:"Flick",cat:"Marketing",icon:"📱",desc:"AI social media tool for hashtag research, scheduling and caption writing.",price:"Paid",trending:false,featured:false,url:"https://flick.social"},
+  {name:"AdCreative.ai",cat:"Marketing",icon:"🎯",desc:"AI-generated ad creatives that are trained on high-performing ads.",price:"Paid",trending:false,featured:false,url:"https://adcreative.ai"},
+  {name:"Perplexity",cat:"Research",icon:"🔬",desc:"AI search engine with real-time web citations and follow-up questions.",price:"Freemium",trending:true,featured:true,url:"https://perplexity.ai"},
+  {name:"Elicit",cat:"Research",icon:"📚",desc:"AI research assistant that analyses research papers and extracts findings.",price:"Freemium",trending:false,featured:false,url:"https://elicit.org"},
+  {name:"Semantic Scholar",cat:"Research",icon:"🎓",desc:"Free AI-powered academic search covering 200M+ scientific papers.",price:"Free",trending:false,featured:false,url:"https://semanticscholar.org"},
+  {name:"Scispace",cat:"Research",icon:"🔭",desc:"AI research assistant for reading and understanding academic papers.",price:"Freemium",trending:false,featured:false,url:"https://typeset.io"},
+  {name:"NotebookLM",cat:"Research",icon:"📓",desc:"Google's free AI notebook that answers questions from your own documents.",price:"Free",trending:true,featured:false,url:"https://notebooklm.google"},
+  {name:"Consensus",cat:"Research",icon:"🤝",desc:"AI search engine for finding scientific consensus on any question.",price:"Freemium",trending:false,featured:false,url:"https://consensus.app"},
+  {name:"Duolingo",cat:"Education",icon:"🦉",desc:"AI-powered language learning with personalised lessons and gamification.",price:"Freemium",trending:true,featured:false,url:"https://duolingo.com"},
+  {name:"Khan Academy Khanmigo",cat:"Education",icon:"📚",desc:"AI tutor powered by GPT-4 for personalised 1-on-1 education.",price:"Free",trending:false,featured:false,url:"https://khanmigo.ai"},
+  {name:"Coursera Coach",cat:"Education",icon:"🎓",desc:"AI learning coach inside Coursera that explains concepts and guides progress.",price:"Freemium",trending:false,featured:false,url:"https://coursera.org"},
+  {name:"Socratic by Google",cat:"Education",icon:"🦉",desc:"Free AI homework helper by Google that explains concepts step-by-step.",price:"Free",trending:false,featured:false,url:"https://socratic.org"},
+  {name:"Tableau AI",cat:"Data & Analytics",icon:"📊",desc:"AI-powered data visualisation and business analytics inside Tableau.",price:"Paid",trending:false,featured:false,url:"https://tableau.com"},
+  {name:"Obviously AI",cat:"Data & Analytics",icon:"🔮",desc:"No-code AI platform for predictive analytics and machine learning.",price:"Paid",trending:false,featured:false,url:"https://obviously.ai"},
+  {name:"Pinecone",cat:"Data & Analytics",icon:"🌲",desc:"Vector database for AI applications and semantic search at scale.",price:"Freemium",trending:false,featured:false,url:"https://pinecone.io"},
+  {name:"Hugging Face",cat:"Other",icon:"🤗",desc:"The GitHub for AI models — share, discover and deploy ML models.",price:"Freemium",trending:true,featured:false,url:"https://huggingface.co"},
+  {name:"Replicate",cat:"Other",icon:"🔁",desc:"Run open-source AI models via API with a simple pay-per-use pricing.",price:"Freemium",trending:false,featured:false,url:"https://replicate.com"},
+  {name:"LangChain",cat:"Other",icon:"🔗",desc:"Framework for building LLM-powered applications and AI agents.",price:"Free",trending:false,featured:false,url:"https://langchain.com"},
+];
+
+const categories = [...new Set(tools.map(t=>t.cat))].sort();
+const catIcons = {
+  "Chat":"💬","Image Generation":"🎨","Coding":"💻","Writing":"✍️","Video":"🎥",
+  "Audio":"🎵","Productivity":"⚡","Design":"🎯","Marketing":"📣","Research":"🔬",
+  "Education":"📚","Data & Analytics":"📊","Other":"🔧"
+};
+
+let activeCat = 'All';
+
+function showPage(page) {
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+page).classList.add('active');
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+  const navEl = document.getElementById('nav-'+page);
+  if(navEl) navEl.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(page==='browse') renderBrowse();
+}
+
+function toolCard(t, showFull) {
+  const priceClass = t.price==='Free'?'price-free':t.price==='Freemium'?'price-freemium':'price-paid';
+  return `<div class="tool-card" onclick="window.open('${t.url}','_blank')">
+    ${t.trending?'<div class="tc-badge">🔥 Trending</div>':''}
+    <div class="tc-top">
+      <div class="tc-icon">${t.icon}</div>
+      <div class="tc-info">
+        <div class="tc-name">${t.name}</div>
+        <div class="tc-cat">${catIcons[t.cat]||'•'} ${t.cat}</div>
+      </div>
+    </div>
+    <div class="tc-desc">${t.desc}</div>
+    <div class="tc-bottom">
+      <span class="tc-price ${priceClass}">${t.price}</span>
+      <span class="tc-link">Visit →</span>
+    </div>
+  </div>`;
+}
+
+function renderHome() {
+  const trending = tools.filter(t=>t.trending).slice(0,6);
+  document.getElementById('trending-grid').innerHTML = trending.map(t=>toolCard(t)).join('');
+  const recent = tools.slice(-6);
+  document.getElementById('recent-grid').innerHTML = recent.map(t=>toolCard(t)).join('');
+  const catCounts = {};
+  tools.forEach(t=>{ catCounts[t.cat]=(catCounts[t.cat]||0)+1; });
+  document.getElementById('home-cats').innerHTML = Object.entries(catCounts).slice(0,12).map(([cat,count])=>`
+    <div onclick="filterByCategory('${cat}')" style="background:white;border:1px solid var(--border);border-radius:10px;padding:14px;text-align:center;cursor:pointer;transition:all 0.15s" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+      <div style="font-size:22px;margin-bottom:6px">${catIcons[cat]||'•'}</div>
+      <div style="font-size:13px;font-weight:600">${cat}</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:2px">${count} tools</div>
+    </div>`).join('');
+}
+
+function renderCategories() {
+  const catCounts = {};
+  tools.forEach(t=>{ catCounts[t.cat]=(catCounts[t.cat]||0)+1; });
+  document.getElementById('cats-page-grid').innerHTML = Object.entries(catCounts).map(([cat,count])=>`
+    <div class="cat-card" onclick="filterByCategory('${cat}')">
+      <div class="cat-card-icon">${catIcons[cat]||'•'}</div>
+      <div class="cat-card-name">${cat}</div>
+      <div class="cat-card-count">${count} tools</div>
+    </div>`).join('');
+}
+
+function renderSidebar() {
+  const catCounts = {All:tools.length};
+  tools.forEach(t=>{ catCounts[t.cat]=(catCounts[t.cat]||0)+1; });
+  document.getElementById('sidebar-cats').innerHTML = ['All',...categories].map(cat=>`
+    <div class="cat-item ${activeCat===cat?'active':''}" onclick="setCat('${cat}')">
+      <span>${cat==='All'?'🌐':catIcons[cat]||'•'} ${cat}</span>
+      <span class="cat-count">${catCounts[cat]||0}</span>
+    </div>`).join('');
+}
+
+function setCat(cat) { activeCat=cat; filterTools(); }
+
+function filterByCategory(cat) {
+  activeCat=cat;
+  showPage('browse');
+}
+
+function filterTools() {
+  renderSidebar();
+  const search = (document.getElementById('browseSearch').value||'').toLowerCase();
+  const fFree = document.getElementById('f-free').checked;
+  const fFreemium = document.getElementById('f-freemium').checked;
+  const fPaid = document.getElementById('f-paid').checked;
+  const fTrending = document.getElementById('f-trending').checked;
+  const fFeatured = document.getElementById('f-featured').checked;
+  let filtered = tools.filter(t=>{
+    if(activeCat!=='All' && t.cat!==activeCat) return false;
+    if(search && !t.name.toLowerCase().includes(search) && !t.desc.toLowerCase().includes(search) && !t.cat.toLowerCase().includes(search)) return false;
+    if((fFree||fFreemium||fPaid) && !((fFree&&t.price==='Free')||(fFreemium&&t.price==='Freemium')||(fPaid&&t.price==='Paid'))) return false;
+    if(fTrending && !t.trending) return false;
+    if(fFeatured && !t.featured) return false;
+    return true;
+  });
+  document.getElementById('browse-title').textContent = activeCat==='All'?'All AI Tools':activeCat;
+  document.getElementById('browse-meta').textContent = filtered.length+' tools found';
+  document.getElementById('browse-grid').innerHTML = filtered.length ? filtered.map(t=>toolCard(t)).join('') : '<p style="color:var(--muted);font-size:14px;grid-column:1/-1">No tools found. Try adjusting your filters.</p>';
+}
+
+function renderBrowse() {
+  renderSidebar();
+  filterTools();
+}
+
+function doSearch() {
+  const q = document.getElementById('heroSearch').value.trim();
+  if(!q) return;
+  activeCat='All';
+  showPage('browse');
+  setTimeout(()=>{ document.getElementById('browseSearch').value=q; filterTools(); },50);
+}
+
+function quickSearch(q) {
+  document.getElementById('heroSearch').value=q;
+  doSearch();
+}
+
+function submitContact() {
+  const name=document.getElementById('c-name').value.trim();
+  const email=document.getElementById('c-email').value.trim();
+  const msg=document.getElementById('c-message').value.trim();
+  if(!name||!email||!msg){alert('Please fill in all required fields.');return;}
+  document.getElementById('form-success').style.display='block';
+  document.getElementById('c-name').value='';
+  document.getElementById('c-email').value='';
+  document.getElementById('c-subject').value='';
+  document.getElementById('c-message').value='';
+}
+
+// Init
+renderHome();
+renderCategories();
+renderBrowse();
+</script>
+</body>
+</html>
